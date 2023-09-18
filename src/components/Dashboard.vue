@@ -75,7 +75,7 @@ import Message from './Message'
       },
       async deleteBurger(id) {
 
-        const req = await fetch(`http://ldesafioestagio-three.vercel.app/burgers/${id}`, {
+        const req = await fetch(`http://desafioestagio-three.vercel.app/burgers/${id}`, {
           method: "DELETE"
         });
 
@@ -94,7 +94,7 @@ import Message from './Message'
 
         const dataJson = JSON.stringify({status: option});
 
-        const req = await fetch(`http://ldesafioestagio-three.vercel.app/burgers/${id}`, {
+        const req = await fetch(`http://desafioestagio-three.vercel.app/burgers/${id}`, {
           method: "PATCH",
           headers: { "Content-Type" : "application/json" },
           body: dataJson
